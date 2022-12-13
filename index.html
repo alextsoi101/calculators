@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" class="puschcalc-mode-change" href="../styles/pushcalclight.css">
+    <link rel="stylesheet" class="inputcalc-mode-change" href="../styles/inputcalclight.css">
+    <title>Calculators</title>
+</head>
+
+<body>
+    <!-- TOP-MENU -->
+    <header>
+        <h4 class="header-text">SIMPLE CALCULATORS</h4>
+        <button class="github-button">
+            <i class="fa fa-github" style="font-size:36px"></i>
+        </button>
+    </header>
+
+    <main>
+        <!-- SECTION PUSH-BUTTON CALCULATOR -->
+        <section id="push-btn-calculator">
+
+            <div class="pushcalc">
+                <div class="pushcalc-top">
+                    <h5 class="pushcalc-toptext">Push-button calculator</h5>
+                    <span class="material-symbols-outlined pushcalc-theme">
+                        dark_mode
+                    </span>
+                </div>
+                <div class="pushcalc-result">
+                    <div class="expr-and-result">
+                        <div class="num-expression"></div>
+                        <div class="main-result"></div>
+                    </div>
+                </div>
+                <div class="pushcalc-digits">
+                    <div class="digits">
+                        <div class="digbtn-div">
+                            <button class="digbtn ac-ce" id="btn-ac">AC</button>
+                            <button class="digbtn ac-ce"  id="btn-ce">CE</button>
+                            <button class="digbtn ac-ce"  id="btn-percent">%</button>
+                        </div>
+                        <div class="digbtn-div">
+                            <button class="digbtn numberbtn" id="btn-7">7</button>
+                            <button class="digbtn numberbtn" id="btn-8">8</button>
+                            <button class="digbtn numberbtn" id="btn-9">9</button>
+                        </div>
+                        <div class="digbtn-div">
+                            <button class="digbtn numberbtn" id="btn-4">4</button>
+                            <button class="digbtn numberbtn" id="btn-5">5</button>
+                            <button class="digbtn numberbtn" id="btn-6">6</button>
+                        </div>
+                        <div class="digbtn-div">
+                            <button class="digbtn numberbtn" id="btn-1">1</button>
+                            <button class="digbtn numberbtn" id="btn-2">2</button>
+                            <button class="digbtn numberbtn" id="btn-3">3</button>
+                        </div>
+                        <div class="digbtn-div">
+                            <button class="digbtn"></button>
+                            <button class="digbtn numberbtn" id="btn-0">0</button>
+                            <button class="digbtn numberbtn" id="btn-point">.</button>
+                        </div>
+                    </div>
+                    <div class="operand">
+                        <button class="digbtn operbtn operator" id="btn-devide">÷</button>
+                        <button class="digbtn operbtn operator" id="btn-multp">*</button>
+                        <button class="digbtn operbtn operator" id="btn-plus">+</button>
+                        <button class="digbtn operbtn operator" id="btn-minus">-</button>
+                        <button class="digbtn operbtn equal" id="btn-equal">=</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- SECTION INPUT CALCULATOR -->
+        <section id="input-calculator">
+            <div class="input-calc">
+                <div class="inputcalc-top">
+                    <h5 class="inputcalc-toptext">Input calculator</h5>
+                    <span class="material-symbols-outlined inputcalc-theme">
+                        dark_mode
+                    </span>
+                </div>
+                <div class="inputcalc-result">
+                    <div class="div-inputcalc-result">
+                        <div class="input-main-result"></div>
+                        <div class="input-equal">
+                            <input type="text" class="inputcalc-input">
+                            <button id="btn-input-equal">=</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="inputcalc-last-results">
+                    <div class="text-del-btn">
+                        <div class="input-last-text">Last results:</div>
+                        <div class="btn-del-last-res">&times;</div>
+                    </div>
+                    <div class="inputresult-text" id="lastres1"></div>
+                    <div class="inputresult-text" id="lastres2"></div>
+                    <div class="inputresult-text" id="lastres3"></div>
+                    <div class="inputresult-text" id="lastres4"></div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="pushcalc.js"></script>
+    <script src="inputcalc.js"></script>
+
+</body>
+</html>
